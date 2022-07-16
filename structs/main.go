@@ -28,8 +28,8 @@ func main() {
 			email: "me@example.com",
 			zipCode: 87777,},
 	}
-		jimPointer := &jim  // "&variablename" points at the variable memory address
-		jimPointer.updateName("James")
+		// jimPointer := &jim  // "&variablename" points at the variable memory address
+		jim.updateName("James")
 		jim.print()
 }
 
