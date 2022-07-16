@@ -28,5 +28,9 @@ func main() {
 			email: "me@example.com",
 			zipCode: 87777,},
 	}
-		fmt.Printf("%+v", jim)
+		jim.print()
+}
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
 }
