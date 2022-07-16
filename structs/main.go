@@ -28,7 +28,12 @@ func main() {
 			email: "me@example.com",
 			zipCode: 87777,},
 	}
+		jim.updateName("James")
 		jim.print()
+}
+
+func (p person) updateName(newFirstName string) {
+	p.firstName = newFirstName
 }
 
 func (p person) print() {
