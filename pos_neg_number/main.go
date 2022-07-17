@@ -7,16 +7,13 @@ func main(){
 	fmt.Println(CountPositivesSumNegatives(inte))
 }
 func CountPositivesSumNegatives(numbers []int) []int {
-	var pos, neg int
 	result := make([]int, 2, 2)
 	for _, pn := range numbers {
 		if pn > 0 {
-			pos++
+			result[0]++
 		}else{
-			neg = neg + pn
-		}
-		result[0] = pos
-		result[1] = neg
+			result[1] = result[1] + pn
+		}	
 	}
 	return result
 }
